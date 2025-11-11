@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/James6827/hpic-scd-app-Final-Version/issues"
   },
-  "homepage": "https://github.com/James6827/hpic-scd-app-Final-Version#readme"
+  "homepage": "https://github.com/James6827/hpic-scd-app-Final-Version#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
