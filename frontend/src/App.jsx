@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/HomePage/Home";
 import Education from "./pages/Education/Education";
 import Community from "./pages/Community/Community";
-import Treatment from "./pages/Treatment/Treatment";
-import Resources from "./pages/Resources/Resources";
+import TreatmentOptions from "./pages/TreatmentOptions/TreatmentOptions";
+import EarlyDetection from "./pages/EarlyDetection/EarlyDetection";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/education" element={<Education />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/treatment" element={<Treatment />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/treatment options" element={<TreatmentOptions />} />
+        <Route path="/earlydetection" element={<EarlyDetection />} />
       </Routes>
       <Footer />
     </Router>

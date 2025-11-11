@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import ribbon from "../../assets/ribbon.png";
+import ribbon from "../../assets/ribbon.jpg";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
