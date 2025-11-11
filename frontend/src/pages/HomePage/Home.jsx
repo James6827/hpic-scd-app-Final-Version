@@ -7,7 +7,8 @@ export default function Home() {
     <div className="home-container">
       <section className="hero">
         <div className="hero-content">
-          <h1>7.74 Million People live with SCD Worldwide</h1>
+          <h1>7.74 Million People</h1>
+          <h2>live with SCD Worldwide</h2>
           <p>
 Sickle-cell disease (SCD) is a genetic disorder that affects haemoglobin, the molecule in red blood cells responsible for carrying oxygen.
           </p>

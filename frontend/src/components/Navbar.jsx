@@ -7,10 +7,6 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-left">
         <img src={logo} alt="HPIC Logo" className="logo" />
-        <div className="logo-text">
-          <strong>HPIC</strong>
-          <span>Health Promotion International Centre</span>
-        </div>
       </div>
 
       <div className="navbar-center">
@@ -20,7 +16,7 @@ export default function Navbar() {
         <button>Contact Us</button>
 
       </div>
-      
+
  <div className="navbar-leftright">
         <button className="language-btn">EN / FR</button>
       </div>
