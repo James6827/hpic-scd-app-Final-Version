@@ -3,10 +3,11 @@ import cors from "cors"
 
 const app = express();
 app.use(cors());
-app.use(express.json)
+app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("Server is running");
+//added route for table fo hospitals
+app.get("/api/hospitals", (req, res) => {
+    res.json({ message: "List of hospitals goes here" });
 });
 
 const PORT = process.env.PORT || 5000;
