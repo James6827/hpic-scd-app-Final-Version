@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import ribbon from "../../assets/Ribbon.pdf"; // adjust path as needed
+import ribbon from "../../assets/Ribbon.jpg"; // adjust path as needed
 
 export default function Home() {
   return (
