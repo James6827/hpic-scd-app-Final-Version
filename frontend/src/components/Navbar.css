@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #d3f0ec; /* soft teal background */
+  background-color: #ffffff; /* soft teal background */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@
 }
 
 .navbar-center button {
-  background-color: #009688; /* teal green */
+  background-color: #579e8e; /* teal green */
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -50,8 +50,29 @@
 .navbar-center button:hover {
   background-color: #00796b; /* darker teal on hover */
 }
+/* leftRight section (EN/FR) */
+.navbar-leftright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
 
-/* Right section (language + login) */
+.language-btn {
+  border: none;
+  background: none;
+  color: #000000;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #009688;
+  color: white;
+}
+/* Right section (login) */
 .navbar-right {
   display: flex;
   align-items: center;

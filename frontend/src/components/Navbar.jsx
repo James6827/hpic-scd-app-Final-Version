@@ -9,20 +9,25 @@ export default function Navbar() {
         <img src={logo} alt="HPIC Logo" className="logo" />
         <div className="logo-text">
           <strong>HPIC</strong>
-          <span>Health Partners International</span>
+          <span>Health Promotion International Centre</span>
         </div>
       </div>
 
       <div className="navbar-center">
         <button>Home</button>
-        <button>Education</button>
-        <button>Community</button>
+        <button>Symptoms</button>
         <button>Treatment</button>
+        <button>Contact Us</button>
+
+      </div>
+      
+ <div className="navbar-leftright">
+        <button className="language-btn">EN / FR</button>
       </div>
 
       <div className="navbar-right">
-        <span>EN | FR</span>
-        <button className="login-btn">Login</button>
+        <button className="login-btn">Login / Sign Up</button>
+      
       </div>
     </nav>
   );
