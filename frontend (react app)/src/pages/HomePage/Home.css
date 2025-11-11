@@ -1,172 +1,87 @@
-body, html {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+.home-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
 }
 
-/* NAVBAR */
-.navbar {
-  background-color: #d3f0ec;
+/* Hero section */
+.hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 30px;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: #e0f7f4; /* light teal background */
   flex-wrap: wrap;
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.hero-content {
+  flex: 1;
+  min-width: 280px;
 }
 
-.logo {
-  width: 50px;
+.hero-content h1 {
+  font-size: 36px;
+  color: #00796b;
+  margin-bottom: 10px;
 }
 
-.logo-text span {
-  font-size: 12px;
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
   color: #333;
 }
 
-.navbar-center button {
+.cta-btn {
   background-color: #009688;
   color: white;
   border: none;
-  margin: 0 5px;
-  padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.navbar-center button:hover {
+.cta-btn:hover {
   background-color: #00796b;
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.login-btn {
-  border: 1px solid #009688;
-  background: none;
-  color: #009688;
-  border-radius: 20px;
-  padding: 6px 14px;
-  cursor: pointer;
-}
-
-.login-btn:hover {
-  background-color: #009688;
-  color: white;
-}
-
-/* HERO SECTION */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 50px 10%;
-  background-color: #f4fdfa;
-}
-
-.hero-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.hero-text h2 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.highlight {
-  color: #d32f2f;
-}
-
-.hero-text p {
-  margin-top: 10px;
-  line-height: 1.5;
-}
-
+/* Ribbon image */
 .hero-image {
   flex: 1;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .hero-image img {
-  max-width: 350px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 300px;
+  height: auto;
 }
 
-/* HOW HPIC CAN HELP */
-.help-section {
-  background-color: #e6f4f2;
+/* Info section */
+.info-section {
   text-align: center;
-  padding: 60px 10%;
+  padding: 60px 15%;
+  background-color: #f9f9f9;
 }
 
-.help-section h2 {
-  font-size: 26px;
+.info-section h2 {
+  color: #009688;
+  margin-bottom: 10px;
 }
 
-.help-description {
-  max-width: 600px;
-  margin: 0 auto 40px;
+.info-section p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #444;
 }
 
-.help-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.help-card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-/* STATISTICS */
-.stats-section {
-  background-color: #00796b;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.stat h3 {
-  font-size: 30px;
-  margin-bottom: 5px;
-}
-
-/* FOOTER */
-.footer {
-  background-color: #222;
-  color: #ddd;
-  padding: 40px 10%;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.footer h4 {
-  color: white;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #444;
-  padding-top: 15px;
-  font-size: 12px;
+  .hero-image {
+    margin-top: 20px;
+  }
 }
