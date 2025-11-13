@@ -5,10 +5,10 @@ import Footer from "./components/Footer";
 import Home from "./pages/HomePage/Home"
 
 // Pages
-import EarlyDetection from "./pages/EarlyDetection/EarlyDetection";
-import TreatmentOptions from "./pages/TreatmentOptions/TreatmentOptions";
+import Symptoms from "./pages/Symptoms";
+import Treatment from "./pages/Treatment";
 import Community from "./pages/Community/Community";
-import Education from "./pages/Education/Education";
+import Education from "./pages/Education";
 
 import "./App.css";
 
