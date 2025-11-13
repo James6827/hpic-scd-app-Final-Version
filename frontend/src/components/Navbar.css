@@ -1,88 +1,78 @@
-/* Responsive tweaks for mobile */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;     /* stack sections vertically */
-    align-items: center;        /* center content */
-    padding: 10px;              /* reduce padding */
-    height: auto;               /* allow height to grow */
-    gap: 10px;
-    background-color: #ffffff;  /* keep navbar background */
-  }
+.navbar 
+{ background-color: #ffffff; /* soft teal background */ 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; padding: 0px 12px; 
+  
+  
+  flex-wrap: wrap; height: 120px; } /* Left section (logo + name) */ 
+  .navbar-left { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; } 
 
-  /* Left section: logo + name */
-  .navbar-left {
-    justify-content: center;    /* center logo on mobile */
-    width: 100%;
-    gap: 8px;
-  }
+  .logo { 
+    width: 250px; 
+    height: auto; } /* Center section (buttons) */ 
 
-  .logo {
-    width: 180px;               /* scale down logo */
-    height: auto;               /* keep aspect ratio */
-  }
+  .navbar-center { 
+    display: flex; 
+    gap: 10px; } 
 
-  /* Center buttons */
-  .navbar-center {
-    flex-wrap: wrap;            /* allow buttons to wrap */
-    justify-content: center;    /* center buttons */
-    width: 100%;
-    gap: 8px;
-  }
-
-  .navbar-center button {
-    padding: 6px 12px;          /* smaller padding for mobile */
-    font-size: 13px;            /* keep font smaller */
-    background-color: #579e8e;  /* keep original color */
-    color: #fff;                /* keep original text color */
-    border-radius: 20px;        /* keep rounded corners */
-    border: none;               /* keep original border */
-  }
-
-  .navbar-center button:hover {
-    background-color: #00796b;  /* keep hover color */
-  }
-
-  /* Language buttons and login */
-  @media (max-width: 768px) {
-  .navbar-end {
-    display: flex;           /* make EN/FR + Login row a single flex row */
-    justify-content: center; /* center all buttons */
-    gap: 12px;               /* space between left and right groups */
-    flex-wrap: nowrap;       /* keep everything on one line */
-    width: auto;
-  }
-
-  .navbar-leftright,
-  .navbar-right {
-    display: flex;
-    gap: 8px;                /* spacing between individual buttons */
-  }
-
-  .language-btn,
-  .login-btn {
-    padding: 6px 12px;       /* keep mobile-friendly padding */
-    font-size: 13px;
-    border-radius: 20px;
-    transition: all 0.2s ease;
-  }
-
-  /* Keep all colors & hover effects */
-  .language-btn {
-    border: none;
-    background: none;
-    color: #000000;
-  }
-
-  .login-btn {
-    border: 1px solid #009688;
-    background: none;
-    color: #009688;
-  }
-
-  .login-btn:hover {
-    background-color: #009688;
-    color: white;
-  }
-}
-
-}
+  .navbar-center button { 
+    background-color: #579e8e; /* teal green */ 
+    color: #fff; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 8px 18px; cursor: pointer; 
+    font-size: 14px; 
+    transition: background-color 0.2s ease; } 
+    
+    .navbar-center button:hover { 
+    background-color: #00796b; /* darker teal on hover */ } /* leftRight section (EN/FR) */ 
+    
+    .navbar-leftright { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    font-size: 14px; } .language-btn { 
+    border: none; 
+    background: none; 
+    color: #000000; 
+    border-radius: 20px; 
+    padding: 6px 14px; 
+    cursor: pointer; 
+    transition: all 0.2s ease; } 
+    
+    .login-btn:hover { 
+    background-color: #009688; 
+    color: white; } /* Right section (login) */ 
+    
+    .navbar-right { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; font-size: 14px; 
+  } 
+  
+    .login-btn { 
+      border: 1px solid #009688; 
+      background: none; 
+      color: #009688; 
+      border-radius: 20px; 
+      padding: 6px 14px; 
+      cursor: pointer; 
+      transition: all 0.2s ease; 
+    } 
+    
+    .login-btn:hover { 
+      background-color: #009688; 
+      color: white; } /* Responsive tweaks */ 
+      @media (max-width: 768px) 
+      { 
+        
+      .navbar { 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 10px; } 
+      
+      .navbar-center { flex-wrap: wrap; } }
