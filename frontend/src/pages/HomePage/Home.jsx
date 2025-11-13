@@ -1,32 +1,35 @@
 import React from "react";
 import "./Home.css";
-import ribbon from "../../assets/Ribbon.jpg"; // adjust path as needed
+import ribbon from "../../assets/Ribbon.jpg"; // importing image from assets folder
 
 export default function Home() {
   return (
     <div className="home-container">
-      <section className="hero">
+      <section className="hero"> 
         <div className="hero-content">
-          <h1>7.74 Million People</h1>
-          <h2>live with SCD Worldwide</h2>
+          <h1>7.74 Million People</h1> {/*satistic in heading 1*/}
+          <h2>live with SCD Worldwide</h2>{/*separated from the one above to have different colours in css*/}
+          {/*separated for paragraph spacing*/}
           <p>
-Sickle-cell disease (SCD) is a genetic disorder that affects haemoglobin, the molecule in red blood cells responsible for carrying oxygen.
+          Sickle-cell disease (SCD) is a genetic disorder that affects haemoglobin, 
+          the molecule in red blood cells responsible for carrying oxygen.
           </p>
           <p>
-SCD is most common in individuals of African, Mediterranean, Middle Eastern, and Indian descent. 
+          SCD is most common in individuals of African, Mediterranean, Middle Eastern, and Indian descent. 
           </p>
           <p> 
-Early diagnosis is crucial for managing the disease and preventing complications.          </p>
+          Early diagnosis is crucial for managing the disease and preventing complications.          </p>
         </div>
-        <div className="hero-image">
-          <img src={ribbon} alt="Awareness Ribbon" />
+        <div className="hero-image"> {/*defined image*/}
+          <img src={ribbon} alt="Awareness Ribbon" /> {/*image for the right side*/}
         </div>
       </section>
 
       <section className="info-section">
         <h2>How HPIC Can Help</h2>
         <p>
-         We offer many tools and resources for you to discover how to take care of yourself and your loved ones who are affected by Sickle Cell Disease.
+         We offer many tools and resources for you to discover 
+         how to take care of yourself and your loved ones who are affected by Sickle Cell Disease.
         </p>
       </section>
     </div>
