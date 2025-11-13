@@ -49,33 +49,3 @@
   max-width: 450px;
   height: auto;
 }
-
-/* Info section */
-.info-section {
-  text-align: center;
-  padding: 60px 15%;
-  background-color: #f9f9f9;
-}
-
-.info-section h2 {
-  color: #009688;
-  margin-bottom: 10px;
-}
-
-.info-section p {
-  font-size: 17px;
-  line-height: 1.5;
-  color: #444;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image {
-    margin-top: 20px;
-  }
-}
