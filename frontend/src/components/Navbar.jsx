@@ -14,8 +14,6 @@ export default function Navbar() {
         <button>Home</button>
         <button>Symptoms</button>
         <button>Treatment</button>
-        <button>Contact Us</button>
-
       </div>
 
       {/* right ish side of navigation bar for language options*/}
