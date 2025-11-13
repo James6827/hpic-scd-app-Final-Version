@@ -19,15 +19,15 @@ export default function Navbar() {
       </div>
 
       {/* right ish side of navigation bar for language options*/}
- <div className="navbar-leftright">
-        <button className="language-btn">EN / FR</button>
-      </div>
+ <div className="navbar-end">
+  <div className="navbar-leftright">
+    <button className="language-btn">EN/FR</button>
+  </div>
+  <div className="navbar-right">
+    <button className="login-btn">Login/Sign Up</button>
+  </div>
+</div>
 
-      {/* right side of navigation bar for sign in / sign up options*/}
-      <div className="navbar-right">
-        <button className="login-btn">Login / Sign Up</button>
-      
-      </div>
     </nav>
   );
 }
