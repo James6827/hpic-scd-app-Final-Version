@@ -32,7 +32,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} HPIC. All rights reserved.
+        &copy; {new Date().getFullYear()} HPIC. All rights reserved. {/* current year */}
       </div>
     </footer>
   );
