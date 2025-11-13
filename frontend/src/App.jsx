@@ -13,6 +13,7 @@ import Education from "./pages/Education/Education";
 import "./App.css";
 
 function App() {
+// layout of the contents of the app
   return (
     <>
       <Navbar />
