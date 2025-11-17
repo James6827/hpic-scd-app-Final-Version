@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/HomePage/Home";
+import InfoSection from "./pages/Information section/InfoSection";
 
 // Pages
 import Symptoms from "./pages/Symptoms";
@@ -28,6 +29,7 @@ function App() {
             <Route path="/login" element={<Login />} /> 
           </Routes>
         </div>
+        <InfoSection />
         <Footer />
       </div>
     </Router>
