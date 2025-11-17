@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 import Home from "./pages/HomePage/Home";
 import InfoSection from "./pages/Information section/InfoSection";
 
 // Pages
-import Symptoms from "./pages/Symptoms";
-import Treatment from "./pages/Treatment";
-import MyJournal from "./pages/MyJournal";
-import Language from "./pages/Language";
-import Login from "./pages/Login";
+import Symptoms from "./Navbar/buttons/Symptoms";
+import Treatment from "./Navbar/buttons/Treatment";
+import MyJournal from "./Navbar/buttons/MyJournal";
+import Language from "./Navbar/buttons/Language";
+import Login from "./Navbar/buttons/Login";
 
 import "./App.css";
 
