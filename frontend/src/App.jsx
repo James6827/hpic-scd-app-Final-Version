@@ -2,26 +2,35 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/HomePage/Home"
-import InfoSection from "./pages/Information section/info-section";
+import Home from "./pages/HomePage/Home";
 
 // Pages
 import Symptoms from "./pages/Symptoms";
 import Treatment from "./pages/Treatment";
-import Community from "./pages/Community/Community";
-import Education from "./pages/Education";
+import MyJournal from "./pages/MyJournal";
+import Language from "./pages/Language";
+import Login from "./pages/Login";
 
 import "./App.css";
 
 function App() {
-// layout of the contents of the app
   return (
-    <>
-      <Navbar />
-      <Home />
-      <InfoSection />
-      <Footer />
-    </>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/symptoms" element={<Symptoms />} />
+            <Route path="/treatment" element={<Treatment />} />
+            <Route path="/myjournal" element={<MyJournal />} /> {/* fixed */}
+            <Route path="/ENFR" element={<Language />} />
+            <Route path="/login" element={<Login />} /> 
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
