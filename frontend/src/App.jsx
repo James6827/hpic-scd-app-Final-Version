@@ -1,11 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/HomePage/Home";
-import Education from "./pages/Education/Education";
-import Community from "./pages/Community/Community";
-import TreatmentOptions from "./pages/TreatmentOptions/TreatmentOptions";
-import EarlyDetection from "./pages/EarlyDetection/EarlyDetection";
+import Home from "./pages/Home/Home";
+import Info from "./pages/Info/Info";
+import SafetyTips from "./pages/SafetyTips/Safetytips";
 
 function App() {
   return (
@@ -13,10 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/community" element={<Community />} />
-        <Route path="/treatment options" element={<TreatmentOptions />} />
-        <Route path="/earlydetection" element={<EarlyDetection />} />
+        <Route path="/info" element={<Info />} />
+        <Route path="/safety" element={<SafetyTips />} />
       </Routes>
       <Footer />
     </Router>
