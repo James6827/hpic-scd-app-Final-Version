@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.css";
 import ribbon from "../../assets/Ribbon.jpg"; // importing image from assets folder
+import InfoSection from "../Information section/InfoSection";
+import StatisticsSection from "../Statistics Section/statistics";
 
 export default function Home() {
   return (
@@ -24,6 +26,13 @@ export default function Home() {
           <img src={ribbon} alt="Awareness Ribbon" /> {/*image for the right side*/}
         </div>
       </section>
+
+        <div> 
+          {/* Additional content can be added here in the future */}
+          <InfoSection />
+          <StatisticsSection />
+        </div>
+
     </div>
   );
 }

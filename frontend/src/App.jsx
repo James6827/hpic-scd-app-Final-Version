@@ -29,7 +29,6 @@ function App() {
             <Route path="/login" element={<Login />} /> 
           </Routes>
         </div>
-        <InfoSection />
         <Footer />
       </div>
     </Router>
