@@ -6,6 +6,8 @@
 .section {
   background-color: #579e8e;
   margin-bottom: 24px;
+  padding: 12px 0; /* <-- added top & bottom padding */
+
 }
 
 .section h1 {
