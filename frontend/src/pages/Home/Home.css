@@ -1,55 +1,71 @@
-/* ======= Square button grid ======= */
-.nav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  margin: 60px auto;
-  max-width: 800px;
-  padding: 0 20px;
+/* PAGE BACKGROUND */
+.home-page {
+  background-color: #1d426d; /* Dark blue like screenshot */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* Space for navbar */
 }
 
-.nav-card {
-  background-color: #e0f7f4;
-  border: 2px solid #009688;
+/* MAP CARD */
+.map-container {
+  width: 90%;
+  max-width: 400px;
+  background: white;
   border-radius: 16px;
-  width: 160px;
-  height: 160px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.map-container img {
+  width: 100%;
+  display: block;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  margin-top: 16px;
+  width: 90%;
+  max-width: 400px;
+  background: #0e243d;
+  border-radius: 40px;
+  padding: 10px 16px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-card h3 {
-  color: #00796b;
+  color: white;
   font-size: 18px;
-  margin: 0;
-  font-weight: 600;
+  gap: 10px;
 }
 
-.nav-card:hover {
-  background-color: #009688;
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
   color: white;
-  transform: translateY(-4px);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
 }
 
-.nav-card:hover h3 {
-  color: white;
+.search-icon,
+.mic-icon {
+  font-size: 20px;
+  color: #fddc5c; /* Yellow to match logo theme */
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .nav-card {
-    width: 130px;
-    height: 130px;
-  }
+/* BOTTOM FOOTER NAV */
+.footer-nav {
+  margin-top: auto;
+  width: 100%;
+  background-color: #1d426d;
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #0e243d;
+}
 
-  .nav-card h3 {
-    font-size: 16px;
-  }
+.footer-nav i {
+  font-size: 24px;
+  color: #fddc5c; /* Yellow icons like screenshot */
 }
